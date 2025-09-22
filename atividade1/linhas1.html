@@ -1,0 +1,38 @@
+<html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linha com Bresenham - WebGL</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        canvas{
+            border: 1px solid #000;
+            background-color: white;
+        }
+        .info{
+            margin-top: 10px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>Desenho de Linha com Algoritmo de Bresenham</h1>
+    <canvas id="glCanvas" width="800" height="600"></canvas>
+    <div class="info">
+        <p><strong>Instruções:</strong></p>
+        <ul>
+            <li>Clique com o botão esquerdo para definir o ponto inicial</li>
+            <li>Clique novamente para definir o ponto final e desenhar a linha</li>
+            <li>Pressione teclas de 0 a 9 para mudar a cor da linha</li>
+        </ul>
+        <p><strong>Cores:</strong> 0-Preto, 1-Azul, 2-Vermelho, 3-Verde, 4-Amarelo, 5-Magenta, 6-Ciano, 7-Laranja, 8-Roxo, 9-Marrom</p>
+    </div>
+    <script src="linhas1.js"></script>
+</body>
+</html>

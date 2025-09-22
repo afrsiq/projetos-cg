@@ -1,0 +1,52 @@
+<html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desenhos com Bresenham - WebGL</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        canvas {
+            border: 1px solid #000;
+            background-color: white;
+        }
+        .info {
+            margin-top: 10px;
+            color: #333;
+        }
+        .mode-indicator {
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .line-mode { background-color: #d4edda; color: #155724; }
+        .triangle-mode { background-color: #cce5ff; color: #004085; }
+    </style>
+</head>
+<body>
+    <h1>Desenho de Linhas e Triângulos com Algoritmo de Bresenham</h1>
+    
+    <div id="modeIndicator" class="mode-indicator line-mode">
+        Modo Atual: LINHAS (R) - Clique para definir pontos da linha
+    </div>
+    
+    <canvas id="glCanvas" width="800" height="600"></canvas>
+    <div class="info">
+        <p><strong>Instruções:</strong></p>
+        <ul>
+            <li><strong>Modo Linhas (R/r):</strong> 2 cliques para desenhar uma linha</li>
+            <li><strong>Modo Triângulos (T/t):</strong> 3 cliques para desenhar um triângulo</li>
+            <li>Pressione teclas de 0 a 9 para mudar a cor</li>
+            <li>Pressione C para limpar a tela</li>
+        </ul>
+        <p><strong>Cores:</strong> 0-Preto, 1-Azul, 2-Vermelho, 3-Verde, 4-Amarelo, 5-Magenta, 6-Ciano, 7-Laranja, 8-Roxo, 9-Marrom</p>
+    </div>
+    <script src="triangulos.js"></script>
+</body>
+</html>
